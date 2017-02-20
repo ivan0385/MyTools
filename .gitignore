@@ -1,1 +1,7 @@
 MyTools.sdf
+MyTools.v12*
+ipch/*
+MyTools/Release
+MyTools/Debug
+Release/*.pdb
+Debug/*.pdb
