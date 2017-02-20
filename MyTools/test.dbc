@@ -1,0 +1,291 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TESTER BCM DVD
+
+
+BO_ 945 ICE2: 8 BCM
+ SG_ ICE2_Counter_Message : 51|4@0+ (1,0) [0|0] ""  DVD
+ SG_ ICE2_Check_Sum : 63|8@0+ (1,0) [0|0] ""  DVD
+ SG_ ICE2_Set_WarningDistance_LDWS : 21|2@0+ (1,0) [0|0] ""  DVD
+ SG_ ICE2_Set_LDWSSwt_OnOff : 19|2@0+ (1,0) [0|0] ""  DVD
+
+BO_ 835 LDWS1: 8 DVD
+ SG_ LDWS1_Counter_Message : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Check_Sum : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Warn_RightLane_ActvInactv : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Warn_LeftLane_ActvInactv : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Status_System_LDWS : 13|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Status_DetectionLane : 3|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Fdbk_SetWarningDistance : 42|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDWS1_Fdbk_LDWSStatus_OnOff : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 897 ICE4: 8 BCM
+ SG_ ICE4_Ypos_TouchPnt : 39|11@0+ (1,0) [0|2047] ""  DVD
+ SG_ ICE4_Xpos_TouchPnt : 23|12@0+ (1,0) [0|4095] ""  DVD
+ SG_ ICE4_Status_TouchScreen : 13|2@0+ (1,0) [0|3] ""  DVD
+ SG_ ICE4_Set_SideView_DisblEna : 2|2@0+ (1,0) [0|3] ""  DVD
+ SG_ ICE4_Set_PDCView_NoDsplDspl : 4|2@0+ (1,0) [0|3] ""  DVD
+ SG_ ICE4_Set_CarColor : 7|3@0+ (1,0) [0|7] ""  DVD
+ SG_ ICE4_Set_AVMClbSwt_OnOff : 10|1@0+ (1,0) [0|1] ""  DVD
+ SG_ ICE4_Command_AVM_OpnClsd : 8|1@0+ (1,0) [0|0] ""  DVD
+
+BO_ 16 AT2: 8 BCM
+ SG_ ShiftLeverPos : 2|3@0+ (1,0) [0|7] ""  DVD
+
+BO_ 2015 Diag_Func_Rx: 8 TESTER
+ SG_ Diag_Function_Request : 7|64@0+ (1,0) [0|0] ""  DVD
+
+BO_ 1831 AVM_Phys_Diag_Rx: 8 TESTER
+ SG_ RRM_Diag_Request : 7|64@0+ (1,0) [0|0] ""  DVD
+
+BO_ 1895 AVM_Phys_Diag_Tx: 8 DVD
+ SG_ RRM_Diag_Respone : 7|64@0+ (1,0) [0|0] ""  TESTER
+
+BO_ 329 IC1: 8 BCM
+ SG_ reverse_gear_switch : 6|1@0+ (1,0) [0|1] ""  DVD
+
+BO_ 368 PEPS1: 8 BCM
+ SG_ PEPS_Ign_Key_POS : 7|2@0+ (1,0) [0|3] ""  DVD
+
+BO_ 1048 AMT3: 8 BCM
+ SG_ RND_display_request : 7|8@0+ (1,0) [0|255] ""  DVD
+
+BO_ 944 ICE5: 8 BCM
+ SG_ ICE5_Statue_VideoChannel_OpnClsd : 11|2@0+ (1,0) [0|3] ""  DVD
+ SG_ ICE5_Resolution_Screen : 15|4@0+ (1,0) [0|15] ""  DVD
+
+BO_ 890 AVM1: 8 DVD
+ SG_ AVM1_Status_Operation : 13|4@0+ (1,0) [0|15] ""  BCM
+ SG_ AVM1_FaultStatus_Camera : 4|5@0+ (1,0) [0|31] ""  BCM
+ SG_ AVM1_CarColor_SetOK : 20|1@0+ (1,0) [0|1] ""  BCM
+ SG_ AVM1_Status_Clb : 9|2@0+ (1,0) [0|3] ""  BCM
+ SG_ AVM1_Fdbk_PDCView : 22|1@0+ (1,0) [0|1] ""  BCM
+ SG_ AVM1_Fdbk_SideView : 21|1@0+ (1,0) [0|1] ""  BCM
+ SG_ AVM1_Fdbk_SetCarColor : 18|3@0+ (1,0) [0|7] ""  BCM
+ SG_ AVM1_Status_VideoOutput_OnOff : 5|1@0+ (1,0) [0|1] ""  BCM
+
+BO_ 608 PDC1: 8 BCM
+ SG_ PDC1_Num_Radar : 58|3@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Fault_SensFMR_NrmErr : 3|1@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Fault_SensFML_NrmErr : 2|1@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Status_DistanceFMR_Lv1 : 31|4@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Status_DistanceFML_Lv1 : 27|4@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Fault_SensRR_PSC : 55|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Fault_SensRL_PSC : 54|1@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Fault_SensFR_PSC : 53|1@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Fault_SensFL_PSC : 52|1@0+ (1,0) [0|0] ""  DVD
+ SG_ PDC1_Status_ParkView_OnOff : 9|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Status_DistanceRR_Lv1 : 47|4@0+ (1,0) [0|15] ""  DVD
+ SG_ PDC1_Fault_SensRMR_NrmErr : 6|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Indication_MinDistance_Info : 51|3@0+ (1,0) [0|7] ""  DVD
+ SG_ PDC1_Status_DistanceRMR_Lv1 : 43|4@0+ (1,0) [0|15] ""  DVD
+ SG_ PDC1_Status_DistanceRML_Lv1 : 39|4@0+ (1,0) [0|15] ""  DVD
+ SG_ PDC1_Status_DistanceRL_Lv1 : 35|4@0+ (1,0) [0|15] ""  DVD
+ SG_ PDC1_Status_DistanceFR_Lv1 : 23|4@0+ (1,0) [0|15] ""  DVD
+ SG_ PDC1_Status_DistanceFL_Lv1 : 19|4@0+ (1,0) [0|15] ""  DVD
+ SG_ PDC1_Fault_System_NrmErr : 11|2@0+ (1,0) [0|3] ""  DVD
+ SG_ PDC1_Fault_SensRR_NrmErr : 7|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Fault_SensRML_NrmErr : 5|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Fault_SensRL_NrmErr : 4|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Fault_SensFR_NrmErr : 1|1@0+ (1,0) [0|1] ""  DVD
+ SG_ PDC1_Fault_SensFL_NrmErr : 0|1@0+ (1,0) [0|1] ""  DVD
+
+BO_ 768 SAS1: 8 BCM
+ SG_ steering_angle_valid : 8|1@0+ (1,0) [0|1] ""  DVD
+ SG_ steering_angle : 31|16@0+ (0.1,-780) [-780|5773.5] "deg"  DVD
+
+BO_ 512 ABS1: 8 BCM
+ SG_ vehicle_speed : 15|13@0+ (0.05625,0) [0|460.74375] "km/h"  DVD
+
+BO_ 534 CVT1: 8 BCM
+ SG_ Shifter_Lever_Signals : 63|8@0+ (1,0) [0|255] ""  DVD
+
+BO_ 384 BCM1: 8 BCM
+ SG_ BCM1_Status_TurnRightSwt_OnOff : 25|1@0+ (1,0) [0|0] ""  DVD
+ SG_ BCM1_Status_TurnLeftSwt_OnOff : 24|1@0+ (1,0) [0|0] ""  DVD
+ SG_ BCM_IgnKeyPOS : 19|2@0+ (1,0) [0|3] ""  DVD
+ SG_ Right_Turn_Lamp_Status : 13|1@0+ (1,0) [0|1] ""  DVD
+ SG_ Left_Turn_Lamp_Status : 12|1@0+ (1,0) [0|1] ""  DVD
+
+
+
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigTimeoutTime_DVD" INT 0 100000;
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes","vector_leerstring";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes","vector_leerstring";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes","vector_leerstring";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 100;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","not_used","not_used","IfActive","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Slave","Master";
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNodeType" ENUM  "kMaster","kSlave15","kSlave30","none";
+BA_DEF_ BU_  "NmStationAddress" INT 0 63;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmBaseAddress" HEX 0 2047;
+BA_DEF_  "NmMessageCount" INT 2 256;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigTimeoutTime_DVD" 0;
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "Yes";
+BA_DEF_DEF_  "NmNodeType" "none";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "Manufacturer" "Chery";
+BA_DEF_DEF_  "NmBaseAddress" 1536;
+BA_DEF_DEF_  "NmMessageCount" 64;
+BA_DEF_DEF_  "NmType" "NmPwrTrainChery";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "NmType" "NmPwrTrainChery";
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 945 100;
+BA_ "GenMsgCycleTime" BO_ 835 100;
+BA_ "GenMsgCycleTimeFast" BO_ 835 10;
+BA_ "GenMsgDelayTime" BO_ 835 10;
+BA_ "GenMsgNrOfRepetition" BO_ 835 3;
+BA_ "GenMsgCycleTime" BO_ 897 100;
+BA_ "GenMsgCycleTime" BO_ 16 10;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "GenMsgSendType" BO_ 2015 8;
+BA_ "DiagRequest" BO_ 1831 1;
+BA_ "GenMsgSendType" BO_ 1831 8;
+BA_ "DiagResponse" BO_ 1895 1;
+BA_ "GenMsgSendType" BO_ 1895 8;
+BA_ "GenMsgCycleTime" BO_ 329 10;
+BA_ "GenMsgCycleTime" BO_ 368 100;
+BA_ "GenMsgCycleTime" BO_ 1048 20;
+BA_ "GenMsgCycleTime" BO_ 944 100;
+BA_ "GenMsgCycleTime" BO_ 890 100;
+BA_ "GenMsgNrOfRepetition" BO_ 890 3;
+BA_ "GenMsgCycleTimeFast" BO_ 890 10;
+BA_ "GenMsgDelayTime" BO_ 890 10;
+BA_ "GenMsgCycleTime" BO_ 608 100;
+BA_ "GenMsgCycleTime" BO_ 768 10;
+BA_ "GenMsgCycleTime" BO_ 512 20;
+BA_ "GenMsgCycleTime" BO_ 534 10;
+BA_ "GenMsgCycleTime" BO_ 384 100;
+BA_ "GenSigSendType" SG_ 835 LDWS1_Fdbk_SetWarningDistance 4;
+BA_ "GenSigSendType" SG_ 835 LDWS1_Fdbk_LDWSStatus_OnOff 4;
+BA_ "GenSigSendType" SG_ 890 AVM1_Fdbk_PDCView 4;
+BA_ "GenSigSendType" SG_ 890 AVM1_Fdbk_SideView 4;
+BA_ "GenSigSendType" SG_ 890 AVM1_Fdbk_SetCarColor 4;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 945 ICE2_Set_WarningDistance_LDWS 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 945 ICE2_Set_LDWSSwt_OnOff 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Ypos_TouchPnt 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Xpos_TouchPnt 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Status_TouchScreen 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Set_SideView_DisblEna 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Set_PDCView_NoDsplDspl 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Set_CarColor 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Set_AVMClbSwt_OnOff 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 897 ICE4_Command_AVM_OpnClsd 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 16 ShiftLeverPos 100;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 329 reverse_gear_switch 100;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 368 PEPS_Ign_Key_POS 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 1048 RND_display_request 200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 944 ICE5_Statue_VideoChannel_OpnClsd 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 944 ICE5_Resolution_Screen 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Num_Radar 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensFMR_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensFML_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceFMR_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceFML_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensRR_PSC 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensRL_PSC 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensFR_PSC 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensFL_PSC 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_ParkView_OnOff 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceRR_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensRMR_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Indication_MinDistance_Info 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceRMR_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceRML_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceRL_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceFR_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Status_DistanceFL_Lv1 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_System_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensRR_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensRML_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensRL_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensFR_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 608 PDC1_Fault_SensFL_NrmErr 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 768 steering_angle_valid 100;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 768 steering_angle 100;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 512 vehicle_speed 200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 534 Shifter_Lever_Signals 100;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 384 BCM1_Status_TurnRightSwt_OnOff 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 384 BCM1_Status_TurnLeftSwt_OnOff 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 384 BCM_IgnKeyPOS 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 384 Right_Turn_Lamp_Status 1000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DVD SG_ 384 Left_Turn_Lamp_Status 1000;
+

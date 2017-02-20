@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Model">
+      <UniqueIdentifier>{1bd358ad-0c85-4c9f-840f-41f163f1984a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\View">
+      <UniqueIdentifier>{6ca0b6c6-050a-48cd-ae37-8fdaee713521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Presenter">
+      <UniqueIdentifier>{019c8660-fd88-49c6-a961-2c49eca141f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataBase">
+      <UniqueIdentifier>{06c5f858-6c68-4e2c-aec0-953ea6098608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Bean">
+      <UniqueIdentifier>{9e6802fc-d226-4b45-9046-3af7b6476699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataProcess">
+      <UniqueIdentifier>{687b0485-2e1c-4bf5-90b1-64f0e8a8d95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MyUtils">
+      <UniqueIdentifier>{ca93938a-ccbc-42e8-b8f6-fce621a76197}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyToolsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComLogDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComSettingDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataRcvIf.h">
+      <Filter>源文件\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="IComSettingView.h">
+      <Filter>源文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="IComTaskModel.h">
+      <Filter>源文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="IComPortStatusListener.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="IComLogView.h">
+      <Filter>源文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="ComLogPresenter.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="MyString.h">
+      <Filter>源文件\MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUtility.h">
+      <Filter>源文件\MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonConfig.h">
+      <Filter>源文件\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlCAN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CanMatrixDef.h">
+      <Filter>源文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CanDbc.h">
+      <Filter>源文件\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CanSettingDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CanBus.h">
+      <Filter>源文件\Bean</Filter>
+    </ClInclude>
+    <ClInclude Include="CanSettingPresenter.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanDeviceStatusListener.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanSettingView.h">
+      <Filter>源文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanTaskModel.h">
+      <Filter>源文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CanLogDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanLogView.h">
+      <Filter>源文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="RichEditCtrlEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CanDbcSettingDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CanLogPresenter.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessDbDriver.h">
+      <Filter>源文件\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CustEvent.h">
+      <Filter>源文件\MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CustUtils.h">
+      <Filter>源文件\MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CanButtonsSetUpDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CanButtonsPresenter.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="EolTestDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EolTestPresenter.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="CanTaskModel.h">
+      <Filter>源文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ComPort.h">
+      <Filter>源文件\Bean</Filter>
+    </ClInclude>
+    <ClInclude Include="ComTaskModel.h">
+      <Filter>源文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ComSettingPresenter.h">
+      <Filter>源文件\Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="CustSetup.h">
+      <Filter>源文件\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanButtonsSetupView.h">
+      <Filter>源文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="MyQueue.h">
+      <Filter>源文件\MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="mysingleton.h">
+      <Filter>源文件\MyUtils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyToolsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ComSettingPresenter.cpp">
+      <Filter>源文件\Presenter</Filter>
+    </ClCompile>
+    <ClCompile Include="ComLogDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="ComSettingDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="ComTaskModel.cpp">
+      <Filter>源文件\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ComPort.cpp">
+      <Filter>源文件\Bean</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CanSettingDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="CanTaskModel.cpp">
+      <Filter>源文件\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CanLogDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="RichEditCtrlEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CanDbcSettingDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="CanButtonsSetUpDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="EolTestDialog.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyTools.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MyTools.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="resource.hm">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MyTools.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\com_conn.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\com_disconn.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\com_log.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\com_setting.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\uidq0099\Downloads\02.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

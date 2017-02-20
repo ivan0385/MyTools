@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C9C91CA-7DAB-47A2-B336-B7F3E9AA5DE7}</ProjectGuid>
+    <RootNamespace>MyTools</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions); _CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccessDbDriver.h" />
+    <ClInclude Include="CanBus.h" />
+    <ClInclude Include="CanButtonsPresenter.h" />
+    <ClInclude Include="CanButtonsSetUpDialog.h" />
+    <ClInclude Include="CanDbc.h" />
+    <ClInclude Include="CanDbcSettingDialog.h" />
+    <ClInclude Include="CanLogDialog.h" />
+    <ClInclude Include="CanLogPresenter.h" />
+    <ClInclude Include="CanMatrixDef.h" />
+    <ClInclude Include="CanSettingDialog.h" />
+    <ClInclude Include="CanSettingPresenter.h" />
+    <ClInclude Include="CanTaskModel.h" />
+    <ClInclude Include="ComLogDialog.h" />
+    <ClInclude Include="ComLogPresenter.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="CommonConfig.h" />
+    <ClInclude Include="ComPort.h" />
+    <ClInclude Include="ControlCAN.h" />
+    <ClInclude Include="ControlsDlg.h" />
+    <ClInclude Include="CustSetup.h" />
+    <ClInclude Include="DataRcvIf.h" />
+    <ClInclude Include="ComSettingDialog.h" />
+    <ClInclude Include="ComSettingPresenter.h" />
+    <ClInclude Include="ComTaskModel.h" />
+    <ClInclude Include="CustEvent.h" />
+    <ClInclude Include="CustUtils.h" />
+    <ClInclude Include="EolTestDialog.h" />
+    <ClInclude Include="EolTestPresenter.h" />
+    <ClInclude Include="ICanButtonsSetupView.h" />
+    <ClInclude Include="ICanDeviceStatusListener.h" />
+    <ClInclude Include="ICanLogView.h" />
+    <ClInclude Include="ICanSettingView.h" />
+    <ClInclude Include="ICanTaskModel.h" />
+    <ClInclude Include="IComLogView.h" />
+    <ClInclude Include="IComPortStatusListener.h" />
+    <ClInclude Include="IComSettingView.h" />
+    <ClInclude Include="IComTaskModel.h" />
+    <ClInclude Include="MyQueue.h" />
+    <ClInclude Include="mysingleton.h" />
+    <ClInclude Include="MyString.h" />
+    <ClInclude Include="MyTools.h" />
+    <ClInclude Include="MyToolsDlg.h" />
+    <ClInclude Include="MyUtility.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="SplashDialog.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CanButtonsSetUpDialog.cpp" />
+    <ClCompile Include="CanDbcSettingDialog.cpp" />
+    <ClCompile Include="CanLogDialog.cpp" />
+    <ClCompile Include="CanSettingDialog.cpp" />
+    <ClCompile Include="CanTaskModel.cpp" />
+    <ClCompile Include="ComLogDialog.cpp" />
+    <ClCompile Include="ComPort.cpp" />
+    <ClCompile Include="ComSettingDialog.cpp" />
+    <ClCompile Include="ComSettingPresenter.cpp" />
+    <ClCompile Include="ComTaskModel.cpp" />
+    <ClCompile Include="ControlsDlg.cpp" />
+    <ClCompile Include="EolTestDialog.cpp" />
+    <ClCompile Include="MyTools.cpp" />
+    <ClCompile Include="MyToolsDlg.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="SplashDialog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyTools.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.hm" />
+    <None Include="res\MyTools.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\uidq0099\Downloads\02.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\com_conn.ico" />
+    <Image Include="res\com_disconn.ico" />
+    <Image Include="res\com_log.ico" />
+    <Image Include="res\com_setting.ico" />
+    <Image Include="res\MyTools.ico" />
+    <Image Include="res\toolbar1.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MyTools.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
