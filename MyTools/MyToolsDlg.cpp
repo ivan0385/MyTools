@@ -726,15 +726,7 @@ void CMyToolsDlg::OnCbnSelchangedComboActiveCan()
 	CString tmp;
 	m_avtive_candb.GetLBText(m_avtive_candb.GetCurSel(), tmp);
 		
-	int value = -1;
-	if (tmp.Find(L"DFLZ")>=0)
-		value = 0;
-	else if (tmp.Find(L"KAIYI") >= 0)
-		value = 1; 
-	else if (tmp.Find(L"QIRUI") >= 0)
-		value = 2;
-
-	if (value > -1)
+	if (m_avtive_candb.GetCurSel() != 0)
 	{
 		m_pControlsDlg->m_bInited = true;
 		m_pCanLogDlg->SetCurPrj(tmp);

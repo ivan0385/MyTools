@@ -418,7 +418,7 @@ void CCanLogDialog::OnTimer(UINT_PTR nIDEvent)
 		m_value += m_valueStep;
 		if (m_value > max)
 		{
-			OnBnClickedButtonCanlogStop();
+			//OnBnClickedButtonCanlogStop();
 			m_value = min;
 		}
 		if(!m_pCanLogPresenter->SendData(msgid, tmp, m_value))

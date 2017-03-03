@@ -56,6 +56,58 @@ END_MESSAGE_MAP()
 
 void CEolTestDialog::initTcList()
 {
+	MY_EOL_TC tcs[] = {
+		{ L"请15秒内重启盒子", L"", L"05 FF 00 FF FF FA", -1, 15000, 100 },
+
+		{ L"REQ_TO_ENTER_EOL", L"FF 01 FF FF", L"FF 01 FF FF", 0, 4000, 7000 },
+
+		{ L"GET_M3_VERSION", L"FF 30 FF FF", L"FF 30 FF FF", 2, 2000, 1000 },
+		{ L"GET_J6_OS_VERSION", L"FF 32 FF FF", L"FF 32 FF FF", 2, 2000, 1000 },
+		{ L"GET_J6_SVP_VERSION", L"FF 33 FF FF", L"FF 33 FF FF", 2, 2000, 1000 },
+		{ L"GET_J6_MAIN_VERSION", L"FF 3C FF FF", L"FF 3C FF FF", 2, 2000, 1000 },
+		{ L"GET_J6_BSP_VERSION", L"FF 3D FF FF", L"FF 3D FF FF", 2, 2000, 1000 },
+
+		{ L"GET_ECUSerialNumber", L"FF 35 FF FF", L"FF 35 FF FF", 2, 2000, 1000 },
+
+		//{ L"READ_M3_DTC",  L"FF 36 FF FF", L"FF 36 FF FF", 1, 2000, 100 },
+		//{ L"CLEAR_M3_DTC", L"FF 37 FF FF", L"FF 37 FF FF", 1, 2000, 100 },
+
+		{ L"SET_VEHICLE", L"FF 3A FF FF 02", L"FF 3A FF FF", 0, 2000, 1000 },
+		{ L"GET_VEHICLE", L"FF 3B FF FF", L"FF 3B FF FF", 1, 2000, 1000 },
+
+		{ L"ENTER_AVM_PRESS_IN", L"FF 51 FF FF 01", L"FF 51 FF FF", 0, 2000, 2000 },
+		{ L"ENTER_AVM_PRESS_OUT", L"FF 51 FF FF 00", L"FF 51 FF FF", 0, 2000, 2000 },
+
+		{ L"ENTER_REVERSE_ON", L"FF 52 FF FF 01", L"FF 52 FF FF", 0, 2000, 2000 },
+		{ L"ENTER_REVERSE_OFF", L"FF 52 FF FF 00", L"FF 52 FF FF", 0, 2000, 2000 },
+
+		{ L"Control_Camera_FRONT", L"FF 55 FF FF 01", L"FF 55 FF FF", 0, 2000, 2000 },
+		{ L"Control_Camera_REAR", L"FF 55 FF FF 02", L"FF 55 FF FF", 0, 2000, 2000 },
+		{ L"Control_Camera_LEFT", L"FF 55 FF FF 03", L"FF 55 FF FF", 0, 2000, 2000 },
+		{ L"Control_Camera_RIGHT", L"FF 55 FF FF 04", L"FF 55 FF FF", 0, 2000, 2000 },
+		{ L"Control_Camera_OFF", L"FF 55 FF FF 00", L"FF 55 FF FF", 0, 2000, 1000 },
+
+		{ L"HW_TEST_USB", L"FF 65 FF FF 00", L"FF 65 FF FF", 0, 2000, 1000 },
+		{ L"HW_TEST_PWR_DET", L"FF 60 FF FF 00", L"FF 60 FF FF", 0, 2000, 1000 },
+		{ L"HW_TEST_CAN_DET", L"FF 61 FF FF 00", L"FF 61 FF FF", 0, 2000, 1000 },
+		{ L"HW_TEST_IGN_ON", L"FF 62 FF FF 00", L"FF 62 FF FF", 0, 2000, 1000 },
+		{ L"HW_TEST_AVM_IN_DET", L"FF 64 FF FF 00", L"FF 64 FF FF", 0, 2000, 1000 },
+
+		{ L"REQ_TO_EXIT_EOL", L"FF 05 FF FF", L"FF 05 FF FF", false, 2000, 100 },
+		
+
+
+		{L"",L"",L"",false,0,0} // end
+	};
+	int index = 0;
+	tcList.clear();
+
+	while(!tcs[index].testName.IsEmpty())
+	{
+		tcList.push_back(tcs[index]);
+		index++;
+	}
+	/*
 	tcList.clear();
 	tcList.push_back({ L"请15秒内重启盒子", L"", L"05 FF 00 FF FF FA", -1, 15000, 100 });
 
@@ -94,6 +146,7 @@ void CEolTestDialog::initTcList()
 	tcList.push_back({ L"HW_TEST_AVM_IN_DET", L"FF 64 FF FF 00", L"FF 64 FF FF", 0, 2000, 1000 });
 
 	tcList.push_back({ L"REQ_TO_EXIT_EOL", L"FF 05 FF FF", L"FF 05 FF FF", false, 2000, 100 });
+	*/
 }
 
 
